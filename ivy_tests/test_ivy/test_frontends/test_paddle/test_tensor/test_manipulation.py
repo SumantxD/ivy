@@ -653,13 +653,13 @@ def test_paddle_take_along_axis(
     test_with_out=st.just(False),
 )
 def test_numpy_put_along_axis(
-        *,
-        dtype_x_indices_axis,
-        test_flags,
-        frontend,
-        fn_tree,
-        on_device,
-        backend_fw,
+    *,
+    dtype_x_indices_axis,
+    test_flags,
+    frontend,
+    fn_tree,
+    on_device,
+    backend_fw,
 ):
     dtypes, x, indices, axis, values, _ = dtype_x_indices_axis
     helpers.test_frontend_function(
@@ -673,4 +673,5 @@ def test_numpy_put_along_axis(
         indices=indices,
         axis=axis,
         values=values,
+
     )
